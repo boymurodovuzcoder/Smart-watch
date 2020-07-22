@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Heart Rate CSS -->
+    <link rel="stylesheet" href="heartRate.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <title>Smart Watch</title>
+    <!-- Google Fonts || font-family: 'Montserrat', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Google Fonts || font-family: 'Source Sans Pro', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <style>
+      .container {
+        margin-top: 25px;
+      }
+      img {
+        width: 450px;
+      }
+      .watches {
+        float: left;
+        position: relative;
+        text-align: center;
+      }
+      .content {
+
+      }
+      .content .title {
+        text-align: left;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+      }
+      .content .description {
+        margin: 30px 0;
+        font-size: 15px;
+      }
+      .content .select-color {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 25px;
+      }
+      .features {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 25px;
+
+      }
+      .color-list {
+        display: inline-block;
+        list-style: none;
+        padding: 0;
+        margin-bottom: 15px;
+      }
+      li:nth-child(1) {
+        background-color: #23211f;  
+      }
+      li:nth-child(2) {
+        background-color: #ca3d22;
+      }
+      
+      li:nth-child(3) {
+        background-color: #565681;
+      }
+      
+      li:nth-child(4) {
+        background-color: #8a5362;
+      }
+      .color-list>li {
+        float: left;
+        margin-right: 10px;
+        width: 50px;
+        height: 35px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .features-button {
+        background-color:#DDDCDD !important;
+        margin-right: 10px;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        font-family: 'Source Sans Pro', sans-serif !important;
+        font-size: 18px !important;
+      }
+      .buttons {
+        margin-bottom: 35px;
+      }
+      .buy {
+        background-color: #F08E1D !important;
+        color: #4e2c05 !important;
+        font-family: 'Source Sans Pro', sans-serif !important;
+        font-size: 18px !important;
+        font-weight: bold !important;
+        letter-spacing: -0.5px;
+        padding: 8px 25px !important;
+      }
+      #time {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 33px;
+        letter-spacing: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Watch -->
+   <div class="container">
+     <div class="watches">
+       <img id="watch-image" src="watches/purple.png" alt="purple watch">
+       <div id="time">
+       </div>
+     </div>
+     <!-- Content -->
+     <div class="content">
+      <p class="title">FitBit 19 - The Smartest Watch</p>
+      <p class="description">
+        Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet consectetur
+      </p>
+      <p class="select-color">
+        Select Color
+      </p>
+      <p class="colors">
+        <ul class="color-list">
+          <li id="black" onclick="document.getElementById('watch-image').src='watches/black.png'"></li>
+          <li id="red" onclick="document.getElementById('watch-image').src='watches/red.png'"></li>
+          <li id="blue" onclick="document.getElementById('watch-image').src='watches/blue.png'"></li>
+          <li id="purple" onclick="document.getElementById('watch-image').src='watches/purple.png'"></li>
+        </ul>
+      </p>
+      <p class="features">
+          Features
+      </p>
+      <p class="buttons">
+        <button type="button" class="btn btn-light features-button">Time</button>
+        <button type="button" class="btn btn-light features-button">Heart Rate</button>
+      </p>
+      <p class="buy-button">
+        <button type="button" class="btn btn-warning buy">BUY NOW</button>
+      </p>
+     </div>
+   </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
